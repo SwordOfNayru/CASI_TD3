@@ -4,13 +4,13 @@ import java.util.Map;
 
 public class Commande {
 
-    private ArrayList<CoupeGlacee> lignes;
+    private ArrayList<Dessert> lignes;
 
     public Commande() {
-        this.lignes = new ArrayList<CoupeGlacee>();
+        this.lignes = new ArrayList<Dessert>();
     }
 
-    public void addCoupeeGlace(CoupeGlacee coupe) {
+    public void addDessert(Dessert coupe) {
         this.lignes.add(coupe);
     }
 
@@ -19,7 +19,7 @@ public class Commande {
 
         float sum = 0f;
 
-        for (CoupeGlacee ligne : lignes) {
+        for (Dessert ligne : lignes) {
             sorti = sorti + String.format("%s + %f\n", ligne.toString(), ligne.getPrix());
             sum += ligne.getPrix();
         }

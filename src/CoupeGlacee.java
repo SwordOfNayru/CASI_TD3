@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class CoupeGlacee {
+public abstract class CoupeGlacee implements Dessert {
     protected float prix;
     protected String description;
     protected List<Parfum> listParfum;
